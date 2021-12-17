@@ -1,0 +1,145 @@
+/*
+    @author: Manuel Solís Gómez (masogo008@gmail.com)
+    @description: Archivo que pondra estilo especifico de inicio en medidas de porcentaje
+    @file: estiloInicio.css
+    @license: totalmente libre
+*/
+/*Añadimos fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/*Usado para todas las imagenes y videos , .., su tamaño se controlara por su contenedor*/
+img,video
+{
+    width: 100%;
+    height: auto;
+}
+/* Colocamos valores a los input ya que no toma directamente los del body*/
+input,select,textarea
+{
+    font-size: 20px; /*El tamaño del body no se aplica en los input por defecto*/
+    font-family: 'Roboto', sans-serif;
+}
+/*body*/
+body
+{
+    font-size: 20px; /*Base en em de 20px*/
+    font-family: 'Roboto', sans-serif;
+    background-color: burlywood;
+}
+form
+{
+    width: 40%;
+    margin: 1.5em auto;
+    padding: 0.8em 2%;
+    border: 10px #74552d ridge;
+    text-align: center;
+    
+    background-color: rgb(235, 172, 90);
+    border-radius: 40px ;
+}
+form h2
+{
+    font-size: 2em;
+    font-weight: bold;
+    font-family: fantasy;
+}
+form div
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1.5em auto;
+    text-align: justify;
+}
+form div label
+{
+    flex: 1;
+
+    font-weight: bold;
+}
+form div input, form div select
+{
+    flex: 2;
+    padding: 0.4em 2%;
+}
+form input[type="submit"] /*Preguntar porque no toma el centrado*/
+{
+    display: inline-block;
+    margin: 1em 0;
+    width: 25%;
+
+    border: 4px rgb(71, 67, 67) outset;
+    background-color: rgb(236, 128, 39);
+    font-weight: bold;
+}
+form input[type="submit"]:hover
+{
+    background-color: rgb(82, 119, 240);
+    color: rgb(255, 255, 255);
+    transition: 1s;
+
+    border-style: inset;
+}
+a
+{
+    text-align: center;
+    display: block;
+    font-size: 0.75em;
+    width: 25%;
+    margin: 0 auto;
+
+    color: black;
+}
+a:hover
+{
+    color: rgb(255, 255, 255);
+    font-size: 0.85em;
+    transition: 1s;
+}
+/* LA SESION YA INICIADA */
+#entrado,.alerta,#preferencias
+{
+    text-align: center;
+    width: 80%;
+    padding: 2em 5%;
+    margin: 1em auto;
+
+    background-color: blanchedalmond;
+}
+#entrado p,.alerta p
+{
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-size: 1em;
+}
+/* Alertas en el programa */
+.alerta
+{
+    color: red;
+    font-size: 0.8em;
+}
+.alerta p
+{
+    margin: 0;
+}
+/* Lista de preferencia */
+#preferencias
+{
+    text-align: justify;
+    margin: 0 auto 1em auto;
+}
+#preferencias h3
+{
+    padding: 1em 2%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: fantasy;
+    background-color: aliceblue;
+}
+#preferencias p
+{
+    padding: 1em 2%;
+    font-weight: bold;
+    font-size: 1em;
+    background-color: aliceblue;
+}
